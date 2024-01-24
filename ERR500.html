@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bizhare</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen" />
+    <style>
+        body {
+            font-family: Oxygen !important;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        @media (min-width: 1024px) {
+            .responsive {
+                width: 768px !important;
+            }
+        }
+        @media (max-width: 480px) {
+            .maintenance-info {
+                width: 100% !important;
+            }
+        }
+        .responsive {
+            width: 100%;
+        }
+        .m-auto {
+            margin: auto;
+        }
+        .header-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            height: 5rem;
+            background-color: white;
+            z-index: 8;
+            justify-content: center;
+        }
+        .header-container > .header {
+            background-color: #ffffff;
+            display: flex; 
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            /* pl-6 pr-2 justify-between items-center */
+        }
+        .chat-wrapper {
+            padding: 10px;
+        }
+        .maintenance-content {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
+        }
+        .maintenance-info {
+            text-align: center;
+            width: 363px;
+        }
+        .maintenance-info > h4 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+        }
+        .maintenance-info > .subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #637288;
+        }
+        .m-0 {
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="responsive m-auto">
+        <div v-if="state && isVisible" class="header-container">
+            <div id="header" class="header responsive" >
+                <a href="https://www.bizhare.id">
+                    <img
+                        src="https://storage.googleapis.com/bizhare-file/bizhare-logo-v2.png"
+                        style="width:132px;"
+                    />
+                </a>
+                <a class="chat-wrapper" href="https://www.bizhare.id/chat">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.4999 10.5H8.49988" stroke="#0A1D3A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.0001 18.4299H13.0001L8.55011 21.39C7.89011 21.83 7.00012 21.3599 7.00012 20.5599V18.4299C4.00012 18.4299 2.00012 16.4299 2.00012 13.4299V7.42993C2.00012 4.42993 4.00012 2.42993 7.00012 2.42993H17.0001C20.0001 2.42993 22.0001 4.42993 22.0001 7.42993V13.4299C22.0001 16.4299 20.0001 18.4299 17.0001 18.4299Z" stroke="#0A1D3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="maintenance-content">
+            <img src="https://imagedelivery.net/DHe5ZyQlb0si8xWkeQ8ugg/illu-error-maintenance/public" width="250px" height="250px" alt="">
+            <div class="maintenance-info">
+                <h4>Maaf, kami sedang melakukan perbaikan sistem</h4>
+                <p class="subtitle">Silakan coba lagi. Jika masalah masih terjadi, hubungi Pusat bantuan kami ya! Kami siap membantu anda</p>
+                <p class="subtitle m-0">Call center: 0811-101-430</p>
+                <p class="subtitle m-0">Email: info@bizhare.id</p>
+            </div>
+::CLOUDFLARE_ERROR_500S_BOX::
+        </div>
+    </div>
+</body>
+</html>
